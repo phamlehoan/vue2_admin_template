@@ -1,0 +1,21 @@
+.c-sidebar {
+  .c-sidebar-brand {
+    padding: 20px 10px 20px 5px;
+    text-decoration: none;
+    .c-sidebar-brand-full {
+      padding: 0px 5px 0px 5px;
+    }
+    .generalAffaris {
+      font-weight: bold;
+      .ch {
+        font-size: 16px;
+        line-height: 18px;
+        margin-bottom: 8px;
+      }
+      .en {
+        font-size: 11px;
+        line-height: 11px;
+      }
+    }
+  }
+}

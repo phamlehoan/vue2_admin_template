@@ -1,0 +1,164 @@
+// Import styles
+@import "~@coreui/coreui/scss/coreui";
+
+// CSidebarBrand
+.c-wrapper {
+  .c-subheader {
+    .breadcrumb {
+      background-color: transparent;
+    }
+  }
+}
+
+// Title
+.c-body {
+  .c-main {
+    .title {
+      font-size: 20px;
+      font-weight: bold;
+      padding-bottom: 20px;
+    }
+  }
+}
+
+// Innter-title bold
+.card {
+  .card-body {
+    .row {
+      .form-group {
+        font-weight: bold;
+      }
+    }
+  }
+}
+
+.card {
+  .card-body {
+    .innter-title {
+      font-size: 14px;
+      font-weight: bold;
+    }
+  }
+}
+
+// CInputRadio top
+.c-body {
+  .c-main {
+    .card {
+      .card-body {
+        .row {
+          .form-inline {
+            padding-top: 10px;
+            padding-bottom: 10px;
+          }
+        }
+      }
+    }
+  }
+}
+// CButton
+.btn {
+  background-color: #44b3c6;
+  color: white;
+  box-shadow: 2px 2px rgba(68, 179, 198, 0.4);
+  font-weight: bold;
+  &:hover {
+    background-color: rgb(15, 164, 190);
+    color: white;
+  }
+  &:focus {
+    box-shadow: none;
+  }
+}
+// 封面圖片btn
+.btn-gray {
+  background-color: rgb(206, 206, 206);
+  color: rgb(65, 65, 65);
+  box-shadow: 2px 2px rgba(233, 230, 230, 0.4);
+  margin-top: 5px;
+  &:hover {
+    background-color: rgb(187, 187, 187);
+    color: rgb(65, 65, 65);
+  }
+  &:focus {
+    box-shadow: none;
+  }
+}
+
+// CInput
+.form-group {
+  .form-control {
+    &:focus {
+      box-shadow: 0 0 0 0.2rem rgb(241, 241, 241);
+      border-color: rgb(216, 216, 216);
+    }
+  }
+}
+
+// CCardFooter
+.card {
+  .card-footer {
+    border-top: none;
+    align-content: center;
+    display: flex;
+    justify-content: center;
+    padding-top: 0px;
+  }
+}
+
+// RadioBtnColor
+[type="radio"]:checked,
+[type="radio"]:not(:checked) {
+  position: absolute;
+  left: -9999px;
+}
+[type="radio"]:checked + label,
+[type="radio"]:not(:checked) + label {
+  position: relative;
+  padding-left: 28px;
+  cursor: pointer;
+  line-height: 20px;
+  display: inline-block;
+  color: #666;
+}
+[type="radio"]:checked + label:before,
+[type="radio"]:not(:checked) + label:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 18px;
+  height: 18px;
+  border: 1px solid #ddd;
+  border-radius: 100%;
+  background: #fff;
+}
+[type="radio"]:checked + label:after,
+[type="radio"]:not(:checked) + label:after {
+  content: "";
+  width: 12px;
+  height: 12px;
+  background: #44b3c6;
+  position: absolute;
+  top: 3px;
+  left: 3px;
+  border-radius: 100%;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+[type="radio"]:not(:checked) + label:after {
+  opacity: 0;
+  -webkit-transform: scale(0);
+  transform: scale(0);
+}
+[type="radio"]:checked + label:after {
+  opacity: 1;
+  -webkit-transform: scale(1);
+  transform: scale(1);
+}
+
+.form-inline {
+  .form-check-inline {
+    margin: 3px;
+  }
+}
